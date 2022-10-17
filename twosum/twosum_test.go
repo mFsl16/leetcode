@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-func TwoSumTest(t *testing.T) {
+func TestTwoSum(t *testing.T) {
 
 	testcase := []struct {
 		Target   int
@@ -27,6 +27,11 @@ func TwoSumTest(t *testing.T) {
 			Target:   6,
 			Nums:     []int{3, 3},
 			ExResult: []int{0, 1},
+		},
+		{
+			Target:   4,
+			Nums:     []int{2, 3, 5},
+			ExResult: nil,
 		},
 	}
 
